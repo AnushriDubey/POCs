@@ -1,0 +1,12 @@
+server:
+  port: 8081 # Run on a different port than the Auth Server
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # Engineering Lesson: Point this to the base URL of your Auth Server.
+          # The Resource Server will automatically append '/.well-known/openid-configuration'
+          # to find the Public Keys and verify the token signature.
+          issuer-uri: http://localhost:8080

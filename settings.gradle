@@ -1,0 +1,5 @@
+rootProject.name = 'Java-pocs'
+include 'jwt'
+include 'oauth'
+include 'resource-server'
+include 'client-credential-oauth'
